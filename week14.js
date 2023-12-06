@@ -17,14 +17,14 @@ console.log(myInformation.join(' '));
 //Задание 4
 //Добавьте в массив countries значения 'Italy' с индексом 5, 'Spain' с индексом 6 и 'France' с индексом 7. Добавление элементов произведите с помощью метода push().
 let countries = ['Austria', 'Belgium', 'Netherlands', 'Czechia', 'Croatia'];
+console.log(countries.length - 1);
 countries.push('Italy', 'Spain', 'France');
 console.log(countries);
 
 //Задание 5
 //У вас есть массив countries, содержащий названия нескольких стран. Используя метод массива, выведите в консоль последний элемент массива. Для этого можно использовать свойство length и индексацию элементов.
 //Обратите внимание, в JavaScript индексация элементов в массиве начинается с 0.
-console.log(countries.length); //8
-console.log(countries[7]); //France
+console.log(countries[countries.length - 1]);
 
 //Задание 6
 //У вас есть массив countries, содержащий названия нескольких стран. Используя метод массива shift, извлеките первый элемент массива и выведите его в консоль. Обратите внимание, что сам массив должен сохраниться в переменной.
@@ -69,7 +69,6 @@ const filterEvenNumbers = numbers.filter(function(x) {
     return checking === 0;
 })
 console.log(filterEvenNumbers);
-
 
 //Задание 12
 //Напишите функцию sortAndPrint, которая принимает копию массива randomNumbers с помощью оператора spread и сортирует его в порядке возрастания с использованием метода sort(). Затем выведите отсортированный массив чисел в консоль.
